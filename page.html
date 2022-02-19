@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Reko Interview</title>
+
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./assessmentcampaign.css">
+    <link rel="stylesheet" href="./videoPage.css">
+
+    <script src="https://use.fontawesome.com/0e9533a028.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <script src="./bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <section id="right">
+        <input type="text" hidden id="event_id" />
+        <input type="text" hidden id="parti_email" value="@Model.Email" />
+        <input type="text" hidden id="parti_uuid" value="@Model.Hzuuid" />
+        <input type="text" hidden id="cname" value="" />
+        <input type="text" hidden id="level" value="0" />
+        <input type="text" hidden id="event_name" />
+        <input type="text" hidden id="event_desc" />
+        <input type="text" hidden id="event_type" value="SELFASS" />
+        <div class="container-fluid">
+            <section class="mt-3">
+                <div class="row mx-auto py-2 klCQEm" id="main-interview-page">
+                    <div id="answer_question_video_holder">
+                        <div class="adminSide">
+                            <video id="question-video-tag" autoplay muted height="100%" width="100%"
+                                class="video-aiexplore" loop>
+                                <source src="" type="video/mp4">
+                            </video>
+                        </div>
+                        <div id="userSide" style="border-radius: 0px 20px 20px 0px">
+                            <div id="answer_record_container">
+                                <div id="answer_record_UserSide">
+                                    <div class="fjxiGO">
+                                        <div class="col-md-7">
+                                            <div class="row">
+                                                <!-- <select id="self_ass_ddl" class="form-control">
+                                                    <option selected="" value="">Select Campaign</option>
+                                                    <option value="samplecampaign">samplecampaign</option>
+                                                    <option value="EVTS81HFW4HJ">Public Speaking Self Assessment
+                                                    </option>
+                                                </select> -->
+                                                <div class="row"><span>Camera Input:</span><br />
+                                                    <div class="col-md-10">
+                                                        <select name="" id="video-source"></select>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <img style="width: 30px;" class="loading-status1" id="loading-status-camera" src="./loading.gif" />
+                                                    </div>
+                                                </div>
+                                                <div class="row"><span>Audio Input:</span><br />
+                                                    <div class="col-md-10">
+                                                        <select name="" id="audio-source-input"></select>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <img style="width: 30px;" class="loading-status1" id="loading-status-audio" src="./loading.gif" />
+                                                    </div>
+                                                </div>
+                                                <div class="row"><span>Speaker Output:</span><br />
+                                                    <div class="col-md-10">
+                                                        <select name="" id="audio-source-output"></select>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <img style="width: 30px;" class="loading-status1" id="loading-status-speaker" src="./loading.gif"/>
+                                                    </div>
+                                                </div>
+                                                <div class="row"><span>Face Verification:</span><br />
+                                                    <div class="col-md-10">
+                                                        <input name="" id="face-check-input" disabled
+                                                            style="color: rgb(49, 173, 211);" value="Verifying"></input>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <img style="width: 30px;" class="loading-status1" id="loading-status-face-verification" src="./loading.gif"/>
+                                                        <img style="width: 30px;" class="loading-status1 d-none" id="loading-status-face-verification-retry" src="./retry.png" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-3">
+                                                <button class="dasqVu gqFVpF d-none" id="start_interview_btn">I'm ready,
+                                                    let's go! 🙏</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- <script src="./audio_video_recorder.js"></script> -->
+    <script src="./js/face-api.min.js"></script>
+    <!-- <script src="./js/face_verification.js"></script> -->
+    <script src="./js/hardware_check.js"></script>
+    <!-- <script src="./js/face_reko.js"></script> -->
+
+</body>
+
+</html>
